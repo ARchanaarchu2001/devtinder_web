@@ -1,6 +1,4 @@
 #DevTinder 
 
--created a Vite + React Project application 
--Remove unnecessary Code
--Install Tailwind CSS
--Install DaisyUI 
+-To add emoji in the VS code - window key + . 
+- To Create the components use the boiler plate shortcut - rafce
