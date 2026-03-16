@@ -1,14 +1,16 @@
-import Navbar from "./components/Navbar"
+import Login from "./components/Login"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
 
 function App() {
-  
-
   return (
-    <>
-
-    <Navbar />
-     <h1 className="text-3xl font-bold">DevTinder</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}>
+          <Route path="login" element={<Login />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
