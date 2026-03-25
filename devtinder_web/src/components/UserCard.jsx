@@ -5,7 +5,7 @@ const UserCard = ({ user }) => {
 
   if (!user) return <p>Loading...</p>;
 
-  const { firstName, lastName, city, photo } = user;
+  const { firstName, lastName, city, photo, age, gender } = user;
 
   return (
     <div className="card bg-base-300 w-96 shadow-sm">
@@ -17,6 +17,7 @@ const UserCard = ({ user }) => {
           {firstName + " " + lastName}
         </h2>
         <p>{city}</p>
+        <p>{age + " " + gender}</p>
         <div className="card-actions justify-center ">
           <button className="btn btn-primary">Ignore</button>
           <button className="btn btn-secondary">Interested</button>
