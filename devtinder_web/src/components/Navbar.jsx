@@ -56,7 +56,7 @@ function Navbar() {
           Profile
         </Link>
       </li>
-      <li><a>Settings</a></li>
+      <li><Link to="/connection">Connections</Link></li>
       <li><a onClick={handleLogout}>Logout</a></li>
     </ul>
   </div>
